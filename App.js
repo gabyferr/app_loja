@@ -1,6 +1,6 @@
 import  React, { useState } from 'react';
 import Login from './lib/components/Login/login'
-import TelaPrincipal from './lib/components/TelaPrincipal/telaprincipal';
+import Menu from './lib/components/Menu/menutabes';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -10,6 +10,6 @@ export default function App() {
   if (!user) {
     return <Login changeStatus={(user) => setUser(user)} />
   } else {
-    return <TelaPrincipal />
+    return <Menu/>
   }
 }
