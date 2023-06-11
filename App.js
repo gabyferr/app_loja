@@ -7,9 +7,9 @@ export default function App() {
 
   //verifica se existe um usuário logado, se não houver chama a
   //tela de login
+  return <Menu/>
   if (!user) {
     return <Login changeStatus={(user) => setUser(user)} />
   } else {
-    return <Menu/>
   }
 }
